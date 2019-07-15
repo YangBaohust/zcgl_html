@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>资产管理 - 首页</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>资产管理 - 生产服务器</title>
+    <link rel="stylesheet" href="css/server-list.css">
     <link rel="stylesheet" href="css/font-awesome.css">
 </head>
 <body>
     <div class="nav">
         <div class="nav-left">西藏东财基金资产管理</div>
-        <div class="nav-right-name">刘全平&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></div>
+        <div class="nav-right">
+            <div class="nav-right-name">刘全平&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+            <dl class="nav-right-signout">
+                <dd><a href="#">修改密码</a></dd>
+                <dd><a href="#">退&nbsp;&nbsp;&nbsp;&nbsp;出</a></dd>
+            </dl>
+                </div>
+        </div>
     </div>
     <div class="sidebar">
         <ul>
-            <li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i><span>资产概览</span></a></li>
-            <li><a href="#"><i class="fa fa-table" aria-hidden="true"></i><span>生产服务器</span></a></li>
-            <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i><span>办公服务器</span></a></li>
-            <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i><span>非服务器</span></a></li>
-            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span>人员管理</span></a></li>
-            <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i><span>日志记录</span></a></li>
+            <li><a href="#"><i class="fa fa-tachometer" aria-hidden="true"></i><span class="">资产概览</span></a></li>
+            <li class="active-li"><a href="#"><i class="fa fa-table" aria-hidden="true"></i><span>生产服务器</span></a></li>
+            <li><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i><span class="">办公服务器</span></a></li>
+            <li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i><span class="">非服务器</span></a></li>
+            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="">人员管理</span></a></li>
+            <li><a href="#"><i class="fa fa-book" aria-hidden="true"></i><span class="">日志记录</span></a></li>
         </ul>
     </div>
     <div class="wrapper">
@@ -33,7 +40,7 @@
                 </form>
             </div>
              <button class="button-insert">
-                 添加服务器
+                 <a href="add_server.html">添加服务器</a>
              </button>
              <button class="button-insert">
                  导出列表

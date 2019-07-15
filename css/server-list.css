@@ -5,6 +5,7 @@
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 li{
@@ -39,19 +40,41 @@ button:hover{
     float: right;
 }
 
-.nav-right-name:hover{
-    background: #666666;
+.nav-right-signout{
+    display: none;
+    width: 100px;
+    height: 80px;
+    background: rgba(57, 61, 73, 0.9);
+    position: absolute;
+    right: 10px;
+    top: 48px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.nav-right-signout dd:hover{
+    background:  #1e9fff;
+}
+
+.nav-right-signout a{
+    color: #fff;
+}
+
+.nav-right-name:hover .nav-right-signout{
+    display: block;
 }
 
 .sidebar{
     font-size: 14px;
     float: left;
-    background: rgba(57, 61, 73, 1);
+    background: rgba(57, 61, 73, 0.9);
     width: 180px;
     position: absolute;
     top: 48px;
-    bottom: 0px;
-    left: 0px;
+    bottom: 0;
+    left: 0;
 }
 
 .sidebar ul li{
@@ -63,7 +86,7 @@ button:hover{
     color: #fff;
 }
 
-.sidebar ul li:hover{
+.sidebar .active-li, .sidebar ul li:hover{
     background: #1e9fff;
 }
 
@@ -74,7 +97,6 @@ button:hover{
 .wrapper{
     min-height: 500px;
     margin-left: 180px;
-    /*background: #eee;*/
     overflow: auto;
 }
 
@@ -109,7 +131,7 @@ button:hover{
 }
 
 .button-insert{
-    float: right;
+    float: left;
     width: 100px;
     margin: 0 5px;
     height: 30px;
@@ -137,6 +159,10 @@ th{
 
 td{
     padding-left: 10px;
+}
+
+td a{
+    color: blue;
 }
 
 .page{
