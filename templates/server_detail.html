@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资产管理 - 生产服务器详情</title>
+    <link rel="stylesheet" href="../static/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/server-list.css">
+    <link rel="stylesheet" href="../static/css/add-server.css">
+    <link rel="stylesheet" href="../static/css/server-detail.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">某某有限公司资产管理</div>
+        <div class="nav-right">
+            <div class="nav-right-name">李日天&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+            <dl class="nav-right-signout">
+                <dd><a href="person_detail.html">修改密码</a></dd>
+                <dd><a href="login.html">退&nbsp;&nbsp;&nbsp;&nbsp;出</a></dd>
+            </dl>
+                </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span>资产概览</span></a></li>
+            <li><a href="server_list.html"><i class="fa fa-table" aria-hidden="true"></i><span>生产服务器</span></a></li>
+            <li><a href="bgserver_list.html"><i class="fa fa-th-large" aria-hidden="true"></i><span>办公服务器</span></a></li>
+            <li><a href="nonserver_list.html"><i class="fa fa-bars" aria-hidden="true"></i><span>非服务器</span></a></li>
+            <li><a href="person_list.html"><i class="fa fa-user" aria-hidden="true"></i><span>人员管理</span></a></li>
+            <li><a href="operater_log.html"><i class="fa fa-book" aria-hidden="true"></i><span>日志记录</span></a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <p class="content-note1">修改生产服务器</p>
+            <p class="content-note2">标注为*为必填项</p>
+            <div style="clear:both"></div>
+            <form class="form-table" action="" method="post">
+                <div class="form-list">
+                    <span>*IP地址</span><input type="text" name="ipaddress" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>资产类型</span><input type="text" name="zctype" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>功能描述</span><input type="text" name="desc" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>服务器类型</span><input type="text" name="servertype" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>数据库类型</span><input type="text" name="dbtype" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>设备品牌</span><input type="text" name="brand" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>设备型号</span><input type="text" name="zcmodel" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>设备序号</span><input type="text" name="zcnumber" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>设备配置</span><input type="text" name="zcpz" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>保修期</span><input type="text" name="guartime" value=""/>
+                </div>
+                <div class="form-list">
+                    <span>备注</span><input type="text" name="comment" value=""/>
+                </div>
+                <!--<div class="error">输入有误，请检查！</div>-->
+                <div style="clear:both"></div>
+                <div class="form-list">
+                    <input class="form-button" type="submit" value="保存"/>
+                </div>
+                <div class="form-list">
+                     <button class="form-button">取消</button>
+                </div>
+                <div class="form-list">
+                     <button class="form-button form-button-del">删除</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

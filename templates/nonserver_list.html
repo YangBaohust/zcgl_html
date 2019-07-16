@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资产管理 - 非服务器</title>
+    <link rel="stylesheet" href="../static/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/server-list.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">某某有限公司资产管理</div>
+        <div class="nav-right">
+            <div class="nav-right-name">李日天&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+            <dl class="nav-right-signout">
+                <dd><a href="person_detail.html">修改密码</a></dd>
+                <dd><a href="login.html">退&nbsp;&nbsp;&nbsp;&nbsp;出</a></dd>
+            </dl>
+                </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span class="">资产概览</span></a></li>
+            <li><a href="server_list.html"><i class="fa fa-table" aria-hidden="true"></i><span>生产服务器</span></a></li>
+            <li><a href="bgserver_list.html"><i class="fa fa-th-large" aria-hidden="true"></i><span class="">办公服务器</span></a></li>
+            <li class="active-li"><a href="nonserver_list.html"><i class="fa fa-bars" aria-hidden="true"></i><span class="">非服务器</span></a></li>
+            <li><a href="person_list.html"><i class="fa fa-user" aria-hidden="true"></i><span class="">人员管理</span></a></li>
+            <li><a href="operater_log.html"><i class="fa fa-book" aria-hidden="true"></i><span class="">日志记录</span></a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <p>非服务器资产列表</p>
+            <div class="form-class">
+                <form>
+                    <input class="form-text" type="text" placeholder="搜索..."/>
+                    <button class="form-submit" type="submit">
+                        <i class='fa fa-search' aria-hidden='true'></i>
+                    </button>
+                </form>
+            </div>
+             <button class="button-insert">
+                 <a href="add_nonserver.html">添加资产</a>
+             </button>
+             <button class="button-insert">
+                 导出列表
+             </button>
+            <br/><br/>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>资产类型</th>
+                        <th>功能描述</th>
+                        <th>设备品牌</th>
+                        <th>设备型号</th>
+                        <th>设备序号</th>
+                        <th>设备配置</th>
+                        <th>管理部门</th>
+                        <th>管理人员</th>
+                        <th>所在网络</th>
+                        <th>备注</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><a href="nonserver_detail.html">1</a></td>
+                    <td>笔记本</td>
+                    <td>办公用</td>
+                    <td>Lenovo</td>
+                    <td>Thinkpad X250</td>
+                    <td>PC-06V3AX</td>
+                    <td>I5/8G/500G</td>
+                    <td>投资研究部</td>
+                    <td>徐文璐</td>
+                    <td>办公</td>
+                    <td>...</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="page">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

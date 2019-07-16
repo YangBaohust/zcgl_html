@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资产管理 - 操作日志</title>
+    <link rel="stylesheet" href="../static/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/server-list.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-left">某某有限公司资产管理</div>
+        <div class="nav-right">
+            <div class="nav-right-name">李日天&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+            <dl class="nav-right-signout">
+                <dd><a href="person_detail.html">修改密码</a></dd>
+                <dd><a href="login.html">退&nbsp;&nbsp;&nbsp;&nbsp;出</a></dd>
+            </dl>
+                </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i><span class="">资产概览</span></a></li>
+            <li><a href="server_list.html"><i class="fa fa-table" aria-hidden="true"></i><span>生产服务器</span></a></li>
+            <li><a href="bgserver_list.html"><i class="fa fa-th-large" aria-hidden="true"></i><span class="">办公服务器</span></a></li>
+            <li><a href="nonserver_list.html"><i class="fa fa-bars" aria-hidden="true"></i><span class="">非服务器</span></a></li>
+            <li><a href="person_list.html"><i class="fa fa-user" aria-hidden="true"></i><span class="">人员管理</span></a></li>
+            <li class="active-li"><a href="operater_log.html"><i class="fa fa-book" aria-hidden="true"></i><span class="">日志记录</span></a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="content">
+            <p>操作日志</p>
+            <div class="form-class">
+                <form>
+                    <input class="form-text" type="text" placeholder="搜索..."/>
+                    <button class="form-submit" type="submit">
+                        <i class='fa fa-search' aria-hidden='true'></i>
+                    </button>
+                </form>
+            </div>
+            <br/><br/>
+            <table class="table-list">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>人员</th>
+                        <th>操作类型</th>
+                        <th>操作内容</th>
+                        <th>操作时间</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>李日天</td>
+                    <td>修改</td>
+                    <td>ip-10.10.10.10</td>
+                    <td>2019-07-16 14:30</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>李日天</td>
+                    <td>增加</td>
+                    <td>ip-10.10.10.12</td>
+                    <td>2019-07-16 14:30</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>李日天</td>
+                    <td>删除</td>
+                    <td>ip-10.10.10.13</td>
+                    <td>2019-07-16 14:30</td>
+                </tr>
+            </tbody>
+            </table>
+            <div class="page">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

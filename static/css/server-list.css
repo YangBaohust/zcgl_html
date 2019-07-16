@@ -175,8 +175,11 @@ td a{
 .pagination li{
     display: inline-block;
     background: #fff;
-    color: #888;
     padding: 5px;
     min-width: 15px;
     border: 1px solid #E2E2E2;
+}
+
+.pagination li a{
+    color: #222;
 }
