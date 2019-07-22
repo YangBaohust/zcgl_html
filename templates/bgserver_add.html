@@ -5,7 +5,7 @@
     <title>资产管理 - 添加办公服务器</title>
     <link rel="stylesheet" href="../static/css/font-awesome.css">
     <link rel="stylesheet" href="../static/css/server-list.css">
-    <link rel="stylesheet" href="../static/css/add-server.css">
+    <link rel="stylesheet" href="../static/css/server-add.css">
 </head>
 <body>
     <div class="nav">
@@ -74,10 +74,16 @@
                     <input class="form-button" type="submit"/>
                 </div>
                 <div class="form-list">
-                     <button class="form-button">取消</button>
+                     <button class="form-button" type="button" onclick="btn_cancel()">取消</button>
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        function btn_cancel() {
+            location.href = "bgserver_list.html";
+        }
+    </script>
+    <!--<script src="../static/js/bgserver.js"></script>-->
 </body>
 </html>

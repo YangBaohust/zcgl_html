@@ -39,12 +39,8 @@
                     </button>
                 </form>
             </div>
-             <button class="button-insert">
-                 <a href="add_bgserver.html">添加服务器</a>
-             </button>
-             <button class="button-insert">
-                 导出列表
-             </button>
+            <button class="button-insert" id="btn_server_add">添加服务器</button>
+            <button class="button-insert" id="btn_export_list">导出列表</button>
             <br/><br/>
             <table class="table-list">
                 <thead>
@@ -247,5 +243,17 @@
             </div>
         </div>
     </div>
+    <script>
+        var btn_server_add = document.getElementById("btn_server_add");
+        btn_server_add.onclick = function () {
+            location.href = "bgserver_add.html";
+        };
+
+        var btn_export_list = document.getElementById("btn_export_list");
+        btn_export_list.onclick = function() {
+            window.open("../static/source/bgserver_list.xlsx");
+        }
+    </script>
+    <!--<script src="../static/js/bgserver.js"></script>-->
 </body>
 </html>

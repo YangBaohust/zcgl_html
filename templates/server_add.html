@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>资产管理 - 添加办公服务器</title>
-    <link rel="stylesheet" href="..static/css/font-awesome.css">
-    <link rel="stylesheet" href="..static/css/server-list.css">
-    <link rel="stylesheet" href="..static/css/add-server.css">
+    <title>资产管理 - 添加生产服务器</title>
+    <link rel="stylesheet" href="../static/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/server-list.css">
+    <link rel="stylesheet" href="../static/css/server-add.css">
 </head>
 <body>
     <div class="nav">
@@ -31,7 +31,7 @@
     </div>
     <div class="wrapper">
         <div class="content">
-            <p class="content-note1">添加办公服务器</p>
+            <p class="content-note1">添加生产服务器</p>
             <p class="content-note2">标注为*为必填项</p>
             <div style="clear:both"></div>
             <form class="form-table" action="" method="post">
@@ -74,10 +74,16 @@
                     <input class="form-button" type="submit"/>
                 </div>
                 <div class="form-list">
-                     <button class="form-button">取消</button>
+                     <button class="form-button" type="button" onclick="btn_cancel()">取消</button>
                 </div>
             </form>
         </div>
     </div>
+    <script>
+        function btn_cancel() {
+            location.href = "server_list.html";
+        }
+    </script>
+    <!--<script src="../static/js/server.js"></script>-->
 </body>
 </html>

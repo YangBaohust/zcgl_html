@@ -32,9 +32,7 @@
     <div class="wrapper">
         <div class="content">
             <p>人员列表</p>
-             <button class="button-insert">
-                 <a href="add_person.html">添加人员</a>
-             </button>
+            <button class="button-insert" id="btn_person_add">添加人员</button>
             <br/><br/>
             <table class="table-list">
                 <thead>
@@ -56,5 +54,12 @@
             </table>
         </div>
     </div>
+    <script>
+        var btn_person_add = document.getElementById("btn_person_add");
+        btn_person_add.onclick = function () {
+            location.href = "person_add.html";
+        }
+    </script>
+    <!--<script src="../static/js/person.js"></script>-->
 </body>
 </html>
